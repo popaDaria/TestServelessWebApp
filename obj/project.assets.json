@@ -35,6 +35,19 @@
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Components.Authorization/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "5.0.0",
+          "Microsoft.AspNetCore.Components": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/5.0.16": {
         "type": "package",
         "dependencies": {
@@ -80,6 +93,25 @@
         },
         "build": {
           "build/net5.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Authentication/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Authorization": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer/5.0.16": {
@@ -288,6 +320,15 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
+      "Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication/6.0.2-rc1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        }
+      },
       "System.IO.Pipelines/5.0.2": {
         "type": "package",
         "compile": {
@@ -304,6 +345,18 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "WebAssembly.Authentication.Auth0/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "[5.0.0, 6.0.0)"
+        },
+        "compile": {
+          "lib/net5.0/Blazor.WebAssembly.Authentication.Auth0.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Blazor.WebAssembly.Authentication.Auth0.dll": {}
         }
       }
     },
@@ -341,6 +394,19 @@
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Components.Authorization/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "5.0.0",
+          "Microsoft.AspNetCore.Components": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/5.0.16": {
         "type": "package",
         "dependencies": {
@@ -386,6 +452,25 @@
         },
         "build": {
           "build/net5.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Authentication/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Authorization": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer/5.0.16": {
@@ -594,6 +679,15 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
+      "Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication/6.0.2-rc1": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
+        }
+      },
       "System.IO.Pipelines/5.0.2": {
         "type": "package",
         "compile": {
@@ -610,6 +704,18 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "WebAssembly.Authentication.Auth0/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "[5.0.0, 6.0.0)"
+        },
+        "compile": {
+          "lib/net5.0/Blazor.WebAssembly.Authentication.Auth0.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Blazor.WebAssembly.Authentication.Auth0.dll": {}
         }
       }
     }
@@ -665,6 +771,21 @@
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Components.Authorization/5.0.0": {
+      "sha512": "I++r4RdziNB9HeQbkHQvzg2N0rX4dSmA1105OnR5xMKZKL8E7TOKR+Mwf45uXgKvxYb08otPrZWTx1M5rmL/8g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.authorization/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.Authorization.xml",
+        "microsoft.aspnetcore.components.authorization.5.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.authorization.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Components.Forms/5.0.16": {
       "sha512": "AkeveWdE3FSqlQMz5XrOHzzlNCGjPXMWj5FzSSwFBXeDcJMx8SQlDF+p1OheiSOMN6HUIaDdM/F5wo3zt2RMmw==",
       "type": "package",
@@ -710,6 +831,26 @@
         "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
         "microsoft.aspnetcore.components.webassembly.5.0.16.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.Authentication/5.0.0": {
+      "sha512": "APmMSqo0ZKmDK9q2+F31nHgDG6AEguUei1ZxgeLwNu8LeuIZN3Inh5Xu1dzrpGQwckbyOpC4+z2CzJVVjMZp1Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.authentication/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.xml",
+        "microsoft.aspnetcore.components.webassembly.authentication.5.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.authentication.nuspec",
+        "staticwebassets/AuthenticationService.js"
       ]
     },
     "Microsoft.AspNetCore.Components.WebAssembly.DevServer/5.0.16": {
@@ -1088,6 +1229,26 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication/6.0.2-rc1": {
+      "sha512": "wFuFNHjPYhN/A5xIVTXrhHjNQT+Ays8KNdzhSso5fRxLqf9HPeJyLqjNuChUESXHu2iizMWA5Txlu9my9gII4w==",
+      "type": "package",
+      "path": "register.microsoft.aspnetcore.components.webassembly.authentication/6.0.2-rc1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "buildMultiTargeting/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "buildTransitive/Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
+        "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.xml",
+        "register.microsoft.aspnetcore.components.webassembly.authentication.6.0.2-rc1.nupkg.sha512",
+        "register.microsoft.aspnetcore.components.webassembly.authentication.nuspec",
+        "staticwebassets/AuthenticationService.js"
+      ]
+    },
     "System.IO.Pipelines/5.0.2": {
       "sha512": "Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
       "type": "package",
@@ -1135,17 +1296,37 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WebAssembly.Authentication.Auth0/1.1.0": {
+      "sha512": "M9hTYyEx0DiJkT2u69enBpno8keHfJEFhgPoRWxMGS00VBHQQ0y61z+1rQISuxp8M4DDtVHRL5TMhH7p9WosuA==",
+      "type": "package",
+      "path": "webassembly.authentication.auth0/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageReadme.md",
+        "icon.png",
+        "lib/net5.0/Blazor.WebAssembly.Authentication.Auth0.dll",
+        "lib/net6.0/Blazor.WebAssembly.Authentication.Auth0.dll",
+        "lib/netstandard2.1/Blazor.WebAssembly.Authentication.Auth0.dll",
+        "webassembly.authentication.auth0.1.1.0.nupkg.sha512",
+        "webassembly.authentication.auth0.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Microsoft.AspNetCore.Components.Authorization >= 5.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.16",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.16",
-      "System.Net.Http.Json >= 5.0.0"
+      "Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication >= 6.0.2-rc1",
+      "System.Net.Http.Json >= 5.0.0",
+      "WebAssembly.Authentication.Auth0 >= 1.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\popad\\.nuget\\packages\\": {}
+    "C:\\Users\\popad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1156,8 +1337,12 @@
       "packagesPath": "C:\\Users\\popad\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\popad\\UNI\\SIXTH_SEMESTER\\SEP6\\TestCode\\ServelessWebApp\\TestServelessWebApp\\TestServelessWebApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\popad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1183,6 +1368,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.Authorization": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[5.0.16, )"
@@ -1192,9 +1381,17 @@
             "target": "Package",
             "version": "[5.0.16, )"
           },
+          "Register.Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+            "target": "Package",
+            "version": "[6.0.2-rc1, )"
+          },
           "System.Net.Http.Json": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "WebAssembly.Authentication.Auth0": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
@@ -1218,7 +1415,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

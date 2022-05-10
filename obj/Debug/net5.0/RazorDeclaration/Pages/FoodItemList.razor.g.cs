@@ -28,84 +28,105 @@ using System.Net.Http.Json;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 4 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web.Virtualization;
+using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 8 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
-using TestServelessWebApp;
+using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
+using Microsoft.JSInterop;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
+using TestServelessWebApp;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\_Imports.razor"
 using TestServelessWebApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+#line 4 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
 using TestServelessWebApp.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+#line 5 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+#line 6 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
 using System.Text;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+#line 7 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
 using System.Net.Mime;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+           [Authorize]
 
 #line default
 #line hidden
@@ -119,7 +140,7 @@ using System.Net.Mime;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 55 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
+#line 56 "C:\Users\popad\UNI\SIXTH_SEMESTER\SEP6\TestCode\ServelessWebApp\TestServelessWebApp\TestServelessWebApp\Pages\FoodItemList.razor"
  
     public string DisplayMessage { get; set; }
     public FoodItem[] _foodItems { get; set; }

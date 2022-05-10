@@ -1,6 +1,8 @@
 {
   "cacheBootResources": true,
-  "config": [ ],
+  "config": [
+    "appsettings.json"
+  ],
   "debugBuild": true,
   "entryAssembly": "TestServelessWebApp",
   "icuDataMode": 0,
@@ -9,9 +11,11 @@
     "assembly": {
       "Microsoft.AspNetCore.Authorization.dll": "sha256-xmMrsu9hc+DwptwbuYIPoSx0y5TED9OlMG8iqc8cUpY=",
       "Microsoft.AspNetCore.Components.dll": "sha256-p8fi9qYy9dAljavVw5DfaVBCBcgiSIQ9Figd+cc\/vZg=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-RETzcaqJB7uXmSqtgbNeKNNc5YC\/Ux+Ud\/XI\/\/VCR38=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Caf5qH+3+K2OBE2aeit1O2mD00rL1zSN3tOEK4+Zh3U=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-aNpp2zX+pBSxJXo2DU\/sjMI0wofA\/MRwShf78ymHDmg=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-Oo6EF\/2YGC1O4Gm81SB101Tj+qI\/sgBAVjKJGlyeok8=",
+      "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": "sha256-TzJ8yXiAFdeuIRugRMsc6NiMKp6LDXSNjQLcXEklJZQ=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-xNXyGPW7KogkmSO+1HUw3Owdf56Y\/fW3w4jZ8VG5Joo=",
       "Microsoft.Extensions.Configuration.dll": "sha256-x9zYR1t1is\/fStNpBiQnXyPdMpLLcQcra3w4RXGSg4o=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-NYecKM0ZpUvzj4spvgi6xUu80rkx8PX7fiRok\/BNaHw=",
@@ -30,6 +34,7 @@
       "Microsoft.JSInterop.dll": "sha256-\/+o\/BakGYQmtiLmfags2uvLE5Mce8oeX3Fz5d+EN6lY=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-27V\/xVV3ooJCgmIWm5xyIdgbwXXGJszURW6Wj1f0Wwc=",
       "System.IO.Pipelines.dll": "sha256-\/C5xhI+m3Aqrcjxy\/TauLyqv\/\/5l8WEW3rXFtVlNhy8=",
+      "Blazor.WebAssembly.Authentication.Auth0.dll": "sha256-Nb8Jr+SRh70Xei2kCFprN9WzKETV+0Qviht9pLpWrh4=",
       "Microsoft.CSharp.dll": "sha256-\/GAWdHOa3O6W6\/V7MNzu5sCo4IaxGa9y7ROsc6NKEas=",
       "Microsoft.VisualBasic.Core.dll": "sha256-a6vcgVC0Rij42j8VGPgv5128Vm0AzdwBch2w\/whLXxM=",
       "Microsoft.VisualBasic.dll": "sha256-yRHEeq+W6sMQdQddT4TJ6VvvOWHd1Z5Q2nEmkbpryD8=",
@@ -195,11 +200,13 @@
       "mscorlib.dll": "sha256-RvlJgNNOrNqPypkseRqbe69kNd7hnKW0u6Bmt1305d4=",
       "netstandard.dll": "sha256-Ttq9E+RchoLMvC6pS8ktXuaz1r51vG7wSm1emPBPRrk=",
       "System.Private.CoreLib.dll": "sha256-7y7hjQvy9SAXBmGIcqlrFwPQioCDSax5WwjUDJYfRAk=",
-      "TestServelessWebApp.dll": "sha256-QPib\/gfhnwzEY3YH7UKKArYzGKSmwAmLqJ2mKOeApXQ="
+      "TestServelessWebApp.dll": "sha256-3Ugdsz6nP9\/coEdw6teNxX+\/DAdgBpf823zrraiBw1U="
     },
+    "extensions": null,
     "lazyAssembly": null,
+    "libraryInitializers": null,
     "pdb": {
-      "TestServelessWebApp.pdb": "sha256-wo9ogTTQgdvZSeXj+4KgSmp\/7YlgG9eOQ8\/2MmkLNQY="
+      "TestServelessWebApp.pdb": "sha256-mARx9GNpxgSF0MPvfhlmxGIrIMLJ4R0d+iV7bTOIcNo="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-jWuZI+z9wt0OfCMj+W5wh3HN+Ye6efC6YfCUWbBHBa8=",
